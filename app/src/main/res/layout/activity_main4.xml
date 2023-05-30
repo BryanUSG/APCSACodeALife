@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainactivity2background"
+    tools:context=".MainActivity4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainactivity4title"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_margin="50dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/farewelltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainactivity4title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="95dp"
+        android:text="Thank you so much for playing! I appreciate you and hope that you got to know more about your likings! The final step is rating the app 💫"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:typeface="serif"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingbartext"
+        android:text="Rating Bar"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:typeface="serif"
+        android:layout_below="@id/farewelltext"
+        android:layout_margin="90dp"
+        android:gravity="center"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingbar"
+        android:layout_below="@id/ratingbartext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-40dp"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/ratetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingbar"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="30dp"
+        android:background="#30ffffff"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:text="Rate!"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:typeface="serif"
+        android:gravity="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratetext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#013e0d"
+        android:text="Logout"
+        android:textSize="20dp"
+        android:typeface="serif"/>
+</RelativeLayout>
